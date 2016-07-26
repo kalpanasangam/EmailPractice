@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="90634" started-at="2016-07-26T16:09:39Z" finished-at="2016-07-26T16:11:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="90634" started-at="2016-07-26T16:09:39Z" finished-at="2016-07-26T16:11:10Z">
+      <class name="nls.Email.LoginTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:nls.Email.LoginTest@1810399e]" name="beforeSuite" is-config="true" duration-ms="11" started-at="2016-07-26T11:09:39Z" finished-at="2016-07-26T11:09:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:nls.Email.LoginTest@1810399e]" name="beforeClass" is-config="true" duration-ms="1" started-at="2016-07-26T11:09:39Z" finished-at="2016-07-26T11:09:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:nls.Email.LoginTest@1810399e]" name="driverInitialization" duration-ms="52050" started-at="2016-07-26T11:09:39Z" finished-at="2016-07-26T11:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialization -->
+        <test-method status="PASS" signature="Credentials()[pri:0, instance:nls.Email.LoginTest@1810399e]" name="Credentials" duration-ms="38566" started-at="2016-07-26T11:10:31Z" depends-on-methods="nls.Email.LoginTest.driverInitialization" finished-at="2016-07-26T11:11:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Credentials -->
+      </class> <!-- nls.Email.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
