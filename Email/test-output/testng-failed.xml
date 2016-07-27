@@ -7,7 +7,6 @@
         <methods>
           <include name="driverInitialization"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="Credentials"/>
         </methods>

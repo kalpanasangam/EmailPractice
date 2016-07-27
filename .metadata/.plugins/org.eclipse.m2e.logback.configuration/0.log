@@ -161,3 +161,11 @@
 2016-07-26 14:11:57,735 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AnjuGit\EmailPractice\Email\src\main\resources
 2016-07-26 14:11:57,752 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-07-26 14:11:57,754 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-07-26 14:49:34,634 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-26 14:49:34,642 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AnjuGit\EmailPractice\Email\src\main\resources
+2016-07-26 14:49:34,644 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-26 14:49:34,672 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-07-26 15:46:48,156 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-26 15:46:48,176 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AnjuGit\EmailPractice\Email\src\main\resources
+2016-07-26 15:46:48,179 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-26 15:46:48,184 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources

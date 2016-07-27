@@ -20,6 +20,10 @@ public class LoginTest {
 	public String pwd2;
 	public String expectedOfWelcome;
 	final static Logger log = Logger.getLogger(LoginTest.class);
+	//Teamviewer
+	//expertsexchange.com
+	//stackoverflow.com - look for green tick
+	//
 	
 @BeforeSuite
 public void beforeSuite(){
