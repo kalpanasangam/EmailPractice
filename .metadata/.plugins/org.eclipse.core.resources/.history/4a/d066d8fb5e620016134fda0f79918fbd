@@ -1,0 +1,43 @@
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Facebook  {
+
+	public static void main(String [] args){
+		
+		
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("https://www.facebook.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		
+		driver.findElement(By.id("email")).sendKeys(Pwd.username);
+		WebElement pwd = driver.findElement(By.id("pass"));
+		pwd.sendKeys(Pwd.password);
+		
+		pwd.submit();
+		
+		driver.navigate().forward();
+		
+		WebElement text =driver.findElement(By.xpath("//textarea[@name='xhpc_message']"));
+		text.click();
+		text.sendKeys("I am attentive to my class");
+		
+		WebElement pic = driver.findElement(By.id("js_0"));
+		pic.sendKeys("C:\\Users\\Admin\\Pictures\\Anjusha");
+		pic.submit();
+		
+		
+		
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,31 @@
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Facebook {
+
+	public static void main(String [] args){
+		
+		
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("http://www.facebook.com");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		
+		driver.findElement(By.id("email")).sendKeys("j2eepractise@nlsinc.com");
+		WebElement pwd = driver.findElement(By.id("pass"));
+		pwd.sendKeys("netlogic123");
+		
+		pwd.submit();
+		
+		driver.navigate().forward();
+		
+		
+		
+	}
+}

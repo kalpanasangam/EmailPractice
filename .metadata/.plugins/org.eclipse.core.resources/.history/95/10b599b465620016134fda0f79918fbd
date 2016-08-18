@@ -1,0 +1,59 @@
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Facebook  {
+
+	public static void main(String [] args) throws Exception{
+		
+		
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("https://www.facebook.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		
+		driver.findElement(By.id("email")).sendKeys(Pwd.username);
+		WebElement pwd = driver.findElement(By.id("pass"));
+		pwd.sendKeys(Pwd.password);
+		
+		pwd.submit();
+		
+		driver.navigate().forward();
+		
+		WebElement text =driver.findElement(By.xpath("//div[@id='u_0_2']//a[@title='Profile']"));
+		
+		System.out.println(text.getAttribute("href"));
+		
+		text.click();
+		
+		driver.navigate().forward();
+		
+		 driver.findElement(By.xpath("//span[text()='Photo / Video']")).click();
+	
+		WebElement photo =driver.findElement(By.linkText("Upload Photos/Videos"));
+		photo.click();
+		
+		
+		Runtime.getRuntime().exec("D:\\AutoitUpoadScript.exe");
+		
+		
+		
+//		Actions action = new Actions(driver);
+//		
+//		action.moveToElement(text).click().build().perform();
+		
+		
+		
+		
+		
+		driver.quit();
+		
+		
+	}
+}

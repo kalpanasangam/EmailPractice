@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-import org.apache.log4j.Logger;
+
 import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -19,7 +19,7 @@ public class LoginTest {
 	public String name;
 	public String pwd2;
 	public String expectedOfWelcome;
-	final static Logger log = Logger.getLogger(LoginTest.class);
+//	final static Logger log = Logger.getLogger(LoginTest.class);
 	//Teamviewer
 	//expertsexchange.com
 	//stackoverflow.com - look for green tick
@@ -34,7 +34,7 @@ public void beforeSuite(){
 	 @BeforeClass
 	  public void beforeClass() {
 		 
-		 log.debug("Before class");
+//		 log.debug("Before class");
 		 url = "https://www.gmail.com/";
 		 name="netlogic.consu@gmail.com";
 		 pwd2="consu.consu123";
@@ -44,7 +44,7 @@ public void beforeSuite(){
 
  @Test
   public void driverInitialization() {
-	 log.debug("At Test");
+//	 log.debug("At Test");
 	 page = new GmailPageOM(url);
 	
 	 Assert.assertEquals( page.getTitle(), "Gmail");
@@ -61,9 +61,5 @@ public void beforeSuite(){
 	 Assert.assertTrue(true);
   }
  
-// @AfterClass
-// public void afterClass(){
-//	 driver.quit();
-// }
- 
+
 }
